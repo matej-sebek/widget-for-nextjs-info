@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ochrana soukromí aplikace widget-for-nextjs pro zobrazení instagramových příspěvků na webu.">
+    <title>Ochrana soukromí | widget-for-nextjs</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <p class="app-name">widget-for-nextjs</p>
+      <nav aria-label="Informační stránky aplikace">
+        <a href="index.html" aria-current="page">Ochrana soukromí</a>
+        <a href="data-deletion.html">Smazání dat</a>
+      </nav>
+    </header>
+    <main id="content">
+      <h1>Ochrana soukromí</h1>
+      <p class="updated">Poslední aktualizace: <time datetime="2026-11-04">4. listopadu 2026</time></p>
+      <p>Provozovatelem aplikace <strong>widget-for-nextjs</strong> je Matěj Šebek.
+        Kontakt: <a href="mailto:sebekmatej02@gmail.com">sebekmatej02@gmail.com</a>.</p>
+      <p>Aplikace umožňuje zobrazovat tři nejnovější příspěvky z připojeného
+        profesionálního instagramového účtu na webu, pro který vlastník účtu
+        připojení povolil.</p>
+
+      <h2>Jaká data aplikace používá</h2>
+      <p>Aplikace zpracovává identifikátor připojeného účtu a přístupový token.
+        Prostřednictvím Meta API načítá identifikátory příspěvků, typ média,
+        adresy obrázků nebo náhledů, odkazy na příspěvky a čas zveřejnění.
+        Pro výběr posledních tří příspěvků může načíst údaje až o dvanácti
+        příspěvcích, včetně údajů o médiích v albech.</p>
+      <p>Tyto údaje slouží k načtení, výběru a zobrazení příspěvků a k provozu
+        jejich mezipaměti. Přístupový token je uložen pouze na serveru a není
+        zpřístupněn návštěvníkům webu. Aplikace nepožaduje ani neukládá
+        instagramové heslo.</p>
+      <p>Aplikace nečte soukromé zprávy, komentáře ani statistiky a nezveřejňuje
+        ani neupravuje příspěvky. Oprávnění ke zprávám obsažené v aktuální
+        konfiguraci nepoužívá.</p>
+
+      <h2>Hosting a mezipaměť</h2>
+      <p>Pro provoz webové integrace využíváme hosting Vercel. Načtená data
+        a obrázky se dočasně ukládají do mezipaměti kvůli rychlosti a omezení
+        požadavků na Meta API. Obnovení dat nemusí znamenat okamžité
+        odstranění všech starších kopií z mezipaměti. Přístupové údaje jsou
+        uchovávány po dobu aktivního připojení účtu.</p>
+      <p>Tyto informační stránky jsou hostované na GitHub Pages. GitHub
+        při jejich návštěvě zaznamenává IP adresu pro bezpečnostní účely.
+        Další informace uvádí
+        <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">zásady ochrany soukromí GitHubu</a>.</p>
+
+      <h2>Odpojení účtu a smazání dat</h2>
+      <p>O odpojení účtu a odstranění dat můžete požádat na
+        <a href="mailto:sebekmatej02@gmail.com">sebekmatej02@gmail.com</a>.
+        Postup je uveden na stránce <a href="data-deletion.html">Pokyny ke smazání dat</a>.</p>
+    </main>
+    <footer>
+      <p>Matěj Šebek · <a href="mailto:sebekmatej02@gmail.com">sebekmatej02@gmail.com</a></p>
+    </footer>
+  </body>
+</html>
